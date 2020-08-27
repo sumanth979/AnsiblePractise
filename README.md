@@ -40,6 +40,12 @@ child_group2
 * https://github.com/sumanth979/AnsiblePractise/blob/master/sample_inventory_file_1.yaml
 * https://github.com/sumanth979/AnsiblePractise/blob/master/sample_inventory_file_2.yaml
 
+#### To run an ansible command aganist a host
+```bash
+ansible <hostname> -m <modulename>
+             &&
+ansible <hostname> -a <command>             
+```
 
 ## Ansible Playbooks
 * Running a series of instructions on different servers in a sequence and restarting the servers in a particular order.
@@ -54,7 +60,20 @@ Playbook - single YAML file
       * Shutdown/Restart
       ...
 ```
+* The each task execute by a Playbook is called **Ansible Module**
+```bash
+To get the list of modules available with ansible, use the following command:
+ansible-doc -l
+```
 
-  
+#### Ansible playbook help command
+```bash
+ansible-playbook --help
+```
+
+#### To run the ansible playbook
+```bash
+ansible-playbook <playbook name>
+```
 
 
