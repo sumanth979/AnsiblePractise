@@ -48,7 +48,7 @@ child_group2
 Playbook - single YAML file
   * play - Defines a set of activities(tasks) to be run n hosts.
     * Task - An action to be perfomed on the host
-      * Execute a command
+      * Execute a Command
       * Run a script
       * Install a package
       * Shutdown/Restart
