@@ -21,14 +21,14 @@ Introduction to Ansible and Basics.
   * **ansible_ssh_pass** - The ssh password for linux
   * **ansible_password** - The password for windows
 
-* A ansible Groups will be created like
+#### A ansible Groups will be created like
 ```bash
 [group1]
 host1
 host2
 ..
 ```
-* A ansible Parent child groups will be created like
+#### A ansible Parent child groups will be created like
 ```bash
 [group1:children]
 child_group1
