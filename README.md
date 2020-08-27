@@ -20,6 +20,12 @@ Introduction to Ansible and Basics.
   * ansible_user - The login details (root/administrator)
   * ansible_ssh_pass - The login details (ssh password for linux)
 
+#### Sample Inventory Files by using Inventory Parameters are here.
+* https://github.com/sumanth979/AnsiblePractise/blob/master/sample_inventory_file_1.yaml
+* https://github.com/sumanth979/AnsiblePractise/blob/master/sample_inventory_file_2.yaml
+
+
+
 
 
 
