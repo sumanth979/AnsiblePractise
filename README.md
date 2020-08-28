@@ -121,3 +121,30 @@ It to use directly - `{{variableName}}`
 Inside a sentence - Inside a {{variableName}} sentence.
 ```
 
+## Conditional Statements & Loops in Ansible
+
+#### When Condition
+* We can use **AND** and **OR** to check multiple conditions.
+```bash
+tasks:
+  - name : <name>
+    yum:
+      name: nginx 
+      state: present
+    when: ansible_os_family == "RedHat"
+```
+
+#### Register
+* Register is used to store the value of the command executed.
+```bash
+Sample Usage:
+    tasks:
+        -
+            shell: 'cat /etc/resolv.conf'
+            register: command_output
+```
+
+
+
+
+
