@@ -90,3 +90,34 @@ ansible-playbook <playbook name> -i <inventoryfile>
   * windows -> to work with windows
   * ...
   
+## Ansible Variables
+* Ansible Variables can create either in inventory file or in playbook file.
+* Either we can create seperate file to maintain variable information.
+
+#### To create a variable in playbook file
+```bash
+vars:
+  dns_server: <server_value>
+```
+
+#### To use the variables in inventory file
+```bash
+# sample inventory file
+server1 variable1=<value> variable2=<value>
+```
+
+#### To use the variables from an external file
+```bash
+# sample variable file - variable.yaml
+
+variable1: <value>
+variable2: <value>
+variable3: <value>
+```
+
+#### Variable usage
+```bash
+It to use directly - `{{variableName}}`
+Inside a sentence - Inside a {{variableName}} sentence.
+```
+
