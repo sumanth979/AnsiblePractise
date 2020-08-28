@@ -80,4 +80,13 @@ ansible-playbook --help
 ansible-playbook <playbook name> -i <inventoryfile>
 ```
 
-
+## Ansible Modules
+* Ansible Modules are categorized into different types. They are as follows:
+  * system -> actions to be performed at system level. (modifying users, firewalls, stopping and starting services etc)
+  * commands -> Used to execute commands or scripts on target machines.
+  * Files -> Help to work with files
+  * Databases
+  * Cloud
+  * windows -> to work with windows
+  * ...
+  
