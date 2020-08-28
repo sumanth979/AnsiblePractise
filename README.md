@@ -134,7 +134,7 @@ tasks:
     when: ansible_os_family == "RedHat"
 ```
 
-#### Register
+#### Register Usage
 * Register is used to store the value of the command executed.
 ```bash
 Sample Usage:
@@ -144,7 +144,38 @@ Sample Usage:
             register: command_output
 ```
 
-
+#### Loops Usage
+* **loop** previously names as **[with_*]** in ansible.
+* To run same set of commands multiple times.
+```bash
+Sample Usage:
+-
+  name: create users
+  hosts: localhost
+  tasks:
+   - user: name= '{{item}}' state=present
+     loop:
+       - user1
+       - user2
+       - user3
+       ...
+```
+```bash
+Sample Usage:
+-
+  name: create users
+  hosts: localhost
+  tasks:
+   - user: name= '{{item.name}}' uid='{{item.id}}' state=present
+     loop:
+       - name: user1
+         id: 1
+       - name: user2
+         id: 2
+       - name: user3
+         id: 3
+       ...
+```
 
 
 
