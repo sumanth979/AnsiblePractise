@@ -46,13 +46,17 @@ ansible <hostname> -m <modulename>
              &&
 ansible <hostname> -a <command>             
 ```
+```bash
+To specify the inventory file:
+ansible <hostname> -m <modulename> -i <inventoryfile>           
+```
 
 ## Ansible Playbooks
 * Running a series of instructions on different servers in a sequence and restarting the servers in a particular order.
 * How a Play Book is writtened:
 ```bash
 Playbook - single YAML file
-  * play - Defines a set of activities(tasks) to be run n hosts.
+  * play - Defines a Set of activities(tasks) to be run n hosts.
     * Task - An action to be perfomed on the host
       * Execute a Command
       * Run a script
@@ -73,7 +77,7 @@ ansible-playbook --help
 
 #### To run the ansible playbook
 ```bash
-ansible-playbook <playbook name>
+ansible-playbook <playbook name> -i <inventoryfile>
 ```
 
 
