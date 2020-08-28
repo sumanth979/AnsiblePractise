@@ -176,6 +176,30 @@ Sample Usage:
          id: 3
        ...
 ```
+## Ansible Roles
+* Asigning a role means
+  * Installing pre-requisities
+  * Installing packages
+  * Configuring services
+  * Configuring users and others
 
+* Sample Roles are - mysql, nginx, redis, monitor, backup etc..
+* For every task you no need to create your own role. You can make use of exsting roles (in ansible galaxy).
+* /etc/ansible/roles is the default location where ansible searches for the roles.
+
+#### To search for an existing role
+```bash
+ansible-galaxy search <roleName>.   -> will search for role in ansible galaxy.
+```
+
+#### To install an existing role
+```bash
+ansible-galaxy install <roleName>.   -> will install role from ansible galaxy.
+```
+
+#### To Create a Role
+```bash
+ansible-galaxy init <roleName>.   -> will create a directory structure as required for a new role.
+```
 
 
