@@ -4,6 +4,20 @@ Introduction to Ansible and Basics.
 #### Ansible Documentation
 * https://docs.ansible.com/ansible/latest/index.html
 
+## Installing Ansible in centos
+
+#### Ansible is part of the Extra Packages for Enterprise Linux (EPEL) repository so you need to install epel-release package first
+```bash
+$ sudo yum install epel-release
+```
+```bash
+$ sudo yum repolist
+```
+#### Now you can go ahead and install ansible
+```bash
+$ sudo yum install ansible
+```
+
 ## Ansible Inventory
 * Ansible can interact with one more servers at a time. To interact ansible will use
   * SSH for Linux
